@@ -8,9 +8,9 @@ interface PageProps extends PropsWithChildren {
 
 export const Page = ({ title, children }: PageProps) => {
   return (
-    <section className="px-12 my-12 w-full flex justify-center">
-      <Box className="max-w-6xl w-full text-center justify-center items-center">
-        <Image className="m-auto mb-4" src={NBALogo} width={100} />
+    <section className="px-6 sm:px-12 my-12 w-full flex justify-center">
+      <Box className="max-w-6xl w-full flex flex-col text-center items-center">
+        <Image className="mx-auto" src={NBALogo} width={100} />
         <Title mb={24}>{title}</Title>
         {children}
       </Box>
